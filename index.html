@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-Bat,Ball CSS</title>
+    <style>
+        /*  that means amra field er upor hover korchi bat er transform and transform-origin */
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: transform 0.2s ease-in;
+        }
+
+        .field {
+            border: 2px solid;
+
+        }
+
+        .ball {
+            width: 90px;
+            position: relative;
+            left: 140px;
+            transition: transform 1s ease-out 0.2s;
+
+
+        }
+
+        .field:hover .ball {
+
+            transform: translate(600px, -210px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="images/bat.png" alt="">
+        <img src="images/ball.png" alt="" class="ball">
+    </div>
+</body>
+
+</html>
